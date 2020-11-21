@@ -1,12 +1,17 @@
 const app = require("express")();
 const bodyParser = require("body-parser");
 const cors = require("cors");
-const port = 5000
+const routes = require("./users/routes")
+
+
+app.set('port', process.env.PORT || 4000);
 
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json({ limit: "10mb" }));
 app.use(cors());
 
-
-app.listen(5000, ()=> console.log(`server on port ${port}`))
+app.use('/', routes)
+app.listen(app.get('port'), () => {
+  console.log(`server on port`, app.get(`port`))
+});
