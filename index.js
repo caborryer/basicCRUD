@@ -4,7 +4,7 @@ const cors = require("cors");
 const routes = require("./users/userRoutes")
 
 
-app.set('port', process.env.PORT || 4000);
+app.set('port', process.env.PORT || 3000);
 
 
 app.use(bodyParser.urlencoded({ extended: true }));

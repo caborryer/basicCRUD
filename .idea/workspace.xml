@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13a41b4a-abb6-4880-a148-d2739f962e6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/utils/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/bycript.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/db.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/controllers.js" beforeDir="false" afterPath="$PROJECT_DIR$/users/controllers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/userModels.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/users/userRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/users/userRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/bycript.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/bycript.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +39,7 @@
       <option name="presentableId" value="Default" />
       <updated>1605956080564</updated>
       <workItem from="1605956081675" duration="6630000" />
-      <workItem from="1606167392997" duration="10864000" />
+      <workItem from="1606167392997" duration="14354000" />
     </task>
     <servers />
   </component>
@@ -51,5 +51,9 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="726" y="301" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.1053/1920.0.1366.768@67.27.1853.1053" timestamp="1605956288525" />
+    <state x="532" y="34" width="912" height="1036" key="CommitChangelistDialog2" timestamp="1606234144821">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="532" y="34" width="912" height="1036" key="CommitChangelistDialog2/67.27.1853.1053/1920.0.1366.768@67.27.1853.1053" timestamp="1606234144821" />
   </component>
 </project>

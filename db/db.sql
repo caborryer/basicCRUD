@@ -34,4 +34,6 @@ ALTER TABLE users
 MODIFY id INT(11) NOT NULL AUTO_INCREMENT;
 
 
-DESCRIBE usuarios
+DESCRIBE usuarios;
+
+SELECT * FROM usuarios;
