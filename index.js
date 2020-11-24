@@ -1,7 +1,7 @@
 const app = require("express")();
 const bodyParser = require("body-parser");
 const cors = require("cors");
-const routes = require("./users/routes")
+const routes = require("./users/userRoutes")
 
 
 app.set('port', process.env.PORT || 4000);
