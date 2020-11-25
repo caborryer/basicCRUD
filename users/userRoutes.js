@@ -1,17 +1,26 @@
 const router = require("express").Router();
-const pool = require('../db/connect')
+
 
 const userControllers = require("./controllers");
+const fundacionController = require("../adopciones/fundaciones");
+const comentarioController = require("../comentarios/comentarioController");
 
 
-const user = new userControllers();
+const usuario = new userControllers();
+const fundacion = new fundacionController();
+const comentario = new comentarioController();
 
-router.route('/registro').post(user.save);
+router.route('/registro').post(usuario.guardar);
+router.route('/login').post(usuario.login);
 
 
-router.get('/add', (req,res) => {
-  res.send('Hello')
-})
+// fundaciones
+router.route('/agregarFundacion').post(fundacion.guardar);
+router.route('/fundaciones').get(fundacion.mostrarFundaciones);
+
+//comentarios
+router.route('/agregarComentarios').post(comentario.guardar);
+router.route('/obtenerComentarios').post(comentario.obtenerComentarios);
 
 
 

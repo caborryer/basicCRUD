@@ -12,6 +12,25 @@ CREATE TABLE usuarios (
     correo VARCHAR(100) NOT NULL
 );
 
+CREATE TABLE fundaciones (
+    fundacion_id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(16) NOT NULL,
+    direccion VARCHAR(255) NOT NULL,
+    telefono VARCHAR(100) NOT NULL
+);
+
+
+
+CREATE TABLE mascotas (
+    mascota_id INT AUTO_INCREMENT PRIMARY KEY,
+    fundacion_id int,
+    nombre VARCHAR(16) NOT NULL,
+    edad VARCHAR(255) NOT NULL,
+    raza VARCHAR(100) NOT NULL,
+    estatura VARCHAR(100) NOT NULL,
+    foreign key (usuario_id) references fundaciones (fundacion_id)
+);
+
 
 CREATE TABLE comentarios(
     usuario_id int,
