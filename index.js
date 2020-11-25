@@ -6,7 +6,7 @@ const routes = require("./users/userRoutes");
 const pool = require('./db/connect');
 
 
-app.set('port', 3030);
+app.set('port', 2000);
 
 
 app.use(bodyParser.urlencoded({ extended: true }));

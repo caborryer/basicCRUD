@@ -22,6 +22,7 @@ router.route('/fundaciones').get(fundacion.mostrarFundaciones);
 router.route('/agregarComentarios').post(comentario.guardar);
 router.route('/obtenerComentarios').get(comentario.obtenerComentarios);
 router.route('/:id').get(comentario.obtenerComentario);
+router.route('/:id').delete(comentario.eliminarComentario);
 
 
 
