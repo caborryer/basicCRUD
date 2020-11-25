@@ -33,6 +33,7 @@ CREATE TABLE mascotas (
 
 
 CREATE TABLE comentarios(
+    comentario_id INT AUTO_INCREMENT PRIMARY KEY,
     usuario_id int,
     descripcion TEXT NOT NULL,
     creado timestamp NOT NULL DEFAULT current_timestamp,
@@ -41,13 +42,14 @@ CREATE TABLE comentarios(
 
 CREATE TABLE reacciones(
     usuario_id int,
+
     reaccion VARCHAR(255) NOT NULL,
     foreign key (usuario_id) references usuarios (usuario_id)
 );
 
 
-ALTER TABLE users
-    ADD PRIMARY KEY (id);
+ALTER TABLE comentarios
+    ADD PRIMARY KEY (comentario_id);
 
 ALTER TABLE users
 MODIFY id INT(11) NOT NULL AUTO_INCREMENT;

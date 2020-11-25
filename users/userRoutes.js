@@ -20,7 +20,8 @@ router.route('/fundaciones').get(fundacion.mostrarFundaciones);
 
 //comentarios
 router.route('/agregarComentarios').post(comentario.guardar);
-router.route('/obtenerComentarios').post(comentario.obtenerComentarios);
+router.route('/obtenerComentarios').get(comentario.obtenerComentarios);
+router.route('/:id').get(comentario.obtenerComentario);
 
 
 
