@@ -41,8 +41,8 @@ CREATE TABLE comentarios(
 );
 
 CREATE TABLE reacciones(
+    reaccion_id INT AUTO_INCREMENT PRIMARY KEY,
     usuario_id int,
-
     reaccion VARCHAR(255) NOT NULL,
     foreign key (usuario_id) references usuarios (usuario_id)
 );

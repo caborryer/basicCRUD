@@ -5,13 +5,8 @@ encryptPassword = async contrasenia => {
   return bcrypt.hash(contrasenia, 10);
 };
 
-decryptPassword = async (contrasenia, hashContrasenia) => {
-  try {
-    return await bcrypt.compareSync(contrasenia, hashContrasenia);
-  } catch (e){
-    console.log(e)
-  }
-
+decryptPassword = async (contrasenia, hashPassword) => {
+  return bcrypt.compareSync(contrasenia, hashPassword);
 };
 
 module.exports = { encryptPassword, decryptPassword };

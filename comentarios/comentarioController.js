@@ -11,7 +11,7 @@ class comentarioController {
 
       await mysqlConnection.query('INSERT INTO comentarios SET ?', {descripcion});
 
-      res.status(200).json({auth: true, message: 'Coemtario enviado exitosamente'});
+      res.status(200).json({auth: true, message: 'Cometario enviado exitosamente'});
 
     } catch (err) {
       console.log(err)
@@ -22,7 +22,7 @@ class comentarioController {
 
   async obtenerComentarios(req, res) {
 
-    await mysqlConnection.query('SELECT * FROM comentarios', (err, rows, fields) =>{
+    await mysqlConnection.query('SELECT * FROM comentarios', (err, rows) =>{
       if(!err) {
         res.json(rows);
       } else {

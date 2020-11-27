@@ -23,19 +23,24 @@ class usuarioController {
     };
   async login(req, res, done) {
 
-    const usuario = await mysqlConnection.query('SELECT * FROM usuarios WHERE usuario = ?', {correo: req.body.correo});
+    const usuario = await mysqlConnection.query('SELECT * FROM usuarios WHERE usuario = ?', {correo: correo});
 
     if (!usuario) {
       return res.status(404).send("El correo no existe")
     }
-    let comparar = await decryptPassword(req.body.contrasenia, usuario.contrasenia);
+    console.log(contrasenia)
+    await decryptPassword(contrasenia);
 
-   if (comparar) {
-      done(null, usuario, req.flash('success', 'Welcome ' + usuario.usuario));
 
-    } else {
-     return res.status(404).send({ auth: false, message: 'El usuario o contrasenia no coinsiden'});
-    }
+
+    res.json('logueado')
+
+   //if (comparar) {
+      //done(null, usuario, req.flash('success', 'Welcome ' + usuario.usuario));
+
+   // } else {
+     //return res.status(404).send({ auth: false, message: 'El usuario o contrasenia no coinsiden'});
+    //}
 
   }
 
